@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Main -  MUSIC</title>
+            <link rel="shortcut icon" href="images/ico.ico">
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bps9S6QWFPZW-A2ErAZRovkETrEEZHpUHxVZ2qjypXxLLBuoBgfb3rvLMp9sT51mO4WUtsVhUOSxVY0SBymNJg" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            <link rel="stylesheet" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+        <body>
+
+            <header>
+                <a href="index.html">
+                    <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__links">
+                        <li><b><a href="index.html" id="main">Main</a></b></li>
+                        <li><b><a href="artists.html">Artists</a></b></li>
+                        <li><b><a href="videos.html">Videos</a></b></li>
+                        <li><b><a href="playlists.html">Playlists</a></b></li>
+                        <li><b><a href="search.html">Search</a></b></li>
+                        <li><b><a href="contacts.html">Contacts</a></b></li>
+                    </ul>
+                </nav>
+                <a class="login" href="login.html" target="_blank"><button class="loginbtn" style="outline: none;">Log In</button></a>
+
+            <div class="h-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            </header>
+
+            
+                <video id="videoBG" poster="images/poster.png" autoplay muted loop>
+                    <source src="background_video.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <div class="animate f">
+                        <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+                        
+                        
+                    </div>
+                
+                </div>
+                
+            
+
+            <div class="cas"></div>
+
+
+
+            <div class="landing-screen">
+                <div class="container">
+                    <section class="news-section">
+                        <div class="block-title"><h3>Hot Releases</h3></div>
+                        <div class="row news-container">
+                            <div class="col-md-6 col-lg-8">
+                                <div class="news-item" id="img" style="background-image: url(images/ik2.JPG)">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Premiere of the album Ирина Кайратовна</b>
+                                                <p>13 Выпуск</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Play()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio2">
+                                                <source src="audio/Ирина_Кайратовна_-_Интро.mp3">
+                                            </audio> 
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/asap.png)"> 
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>New single A$AP Ferg </b>
+                                                <p>Dennis Rodman (feat. Tyga)</p>
+                                            </div>                                    
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playasap()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio3">
+                                                <source src="audio/Asap_Ferg_Dennis_Rodman.mp3">
+                                            </audio> 
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/livefast.jpg);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>A$AP Rocky, Alan Walker</b>
+                                                <p>Live Fast (PUBGM)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playlive()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio4">
+                                                <source src="audio/Alan_Walker_AAP_Rocky_-_Live_Fast_65685794.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/kod.jpg);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>J. Cole</b>
+                                                <p>KOD</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playkod()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio5">
+                                                <source src="audio/J._Cole-KOD_(GET.MP3NOTA.INFO).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/redbone.jpg);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Childish Gambino</b>
+                                                <p>Redbone</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playredbone()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio6">
+                                                <source src="audio/childish-gambino_redbone.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/crash.jpg);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>ScHoolboy Q</b>
+                                                <p>Crash</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playcrash()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio7">
+                                                <source src="audio/Schoolboy_Q_-_CrasH.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-8";>
+                                <div class="news-item" id="img" style="background-image: url(images/joji-nectar.png) ">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Joji album premiere</b>
+                                                <p>Nectar</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playjoji()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio8">
+                                                <source src="audio/Joji_-_MODUS.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/outwest.jpg); background-position: bottom;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Jackboys & Travis Scott</b>
+                                                <p>Out West (feat. Young Thug)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playout()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio9">
+                                                <source src="audio/JACKBOYS_-_OUT_WEST_(feat._Young_Thug).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/goingbad.jpg); background-position: top;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Meek Mill</b>
+                                                <p>Going Bad (feat. Drake)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playgoing()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio10">
+                                                <source src="audio/meek-mill-feat-drake-going-bad_(muzzona.kz).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/longlive.jpg); background-position: top;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>A$AP Rocky</b>
+                                                <p>F**kin Problems (feat. 2 Chainz)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playevery()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio11">
+                                                <source src="audio/AAP_Rocky_-_Fkin_Problems_52987483.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-8";>
+                                <div class="news-item" id="img" style="background-image: url(images/khalid.JPG) ">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Khalid</b>
+                                                <p>Suncity</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playbetter()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio12">
+                                                <source src="audio/khalid-better_456252705.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/зеркала.JPG);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Scriptonite</b>
+                                                <p>Не надо меня узнавать</p>
+                                            </div>                       
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playscrip()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio13">
+                                                <source src="audio/Скриптонит_-_Не_надо_меня_узнавать.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/splashin.jpg); background-position: top;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Rich The Kid</b>
+                                                <p>Splashin</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playsplashin()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio14">
+                                                <source src="audio/rich_the_kid-splashin.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/tfest.jpg);">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>T-Fest</b>
+                                                <p>Скандал (feat. Баста)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playtfest()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio15">
+                                                <source src="audio/T-Fest_-_Скандал_Piano_Version_(ft._Баста).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/future.jpg); background-position: top;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Future</b>
+                                                <p>Life Is Good (feat. Drake)</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playlife()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio16">
+                                                <source src="audio/Future,_Drake_-_Life_Is_Good.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="news-item" id="img" style="background-image: url(images/6lack.PNG)">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>6LACK</b>
+                                                <p>Ex Calling</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Play6lack()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio17">
+                                                <source src="audio/6LACK-Ex-Calling.mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-8";>
+                                <div class="news-item" id="img" style="background-image: url(images/post.JPG); background-position: top;">
+
+                                    <div class="news-item-content">
+                                        <div class="news-item-header"></div>
+                                        <div class="news-item-body">
+                                            <div class="news-item-title">
+                                                <b>Post Malone</b>
+                                                <p>Hollywood's Bleeding</p>
+                                            </div>
+                                            <div class="news-item-footer">
+                                                <a class="btn btn-default btn-sm" href="##" onClick="Playholly()">Play | Pause</a>
+                                            </div>
+                                            <audio class="music2" controls id="audio18">
+                                                <source src="audio/1567793420_post-malone-hollywoods-bleeding (1).mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+        
+                        </div>
+                    </section>
+                </div>
+
+                <footer class="layout-footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 d-none d-md-block">
+                                <nav class="footer-menu font-weight-bold mb-5">
+                                    <a href="https://vk.com/idtulebergenov" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/vk.png" style="width: 25px;" alt="">
+                                    </a>
+                                    <a href="https://www.instagram.com/tulebergenov" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/insta.png" style="width: 25px;" alt="">
+                                    </a>           
+                                    <a href="https://twitter.com/login" style="text-decoration: none; padding-right: 15px;" target="_blank">
+                                        <img id="social" src="images/twitter.png" style="width: 25px;" alt="">
+                                    </a>
+                                    <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                                        <img id="social" src="images/youtube.png" style="width: 25px;" alt="">
+                                    </a>
+                                    
+                                </nav>
+                            </div>
+                            <div class="col-md-4 text-center" id="footer-img">
+                                <img src="images/ico.ico" style="width: 47px;" alt="">
+                            </div>
+                            <div class="col-md-4 text-right font-weight-bold copyright" id="footer-text">© 2020 OOO "A.D.A PRODUCTION"</div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+
+            
+
+
+
+            <script src="script.js"></script>
+
+        </body>
+    </html>

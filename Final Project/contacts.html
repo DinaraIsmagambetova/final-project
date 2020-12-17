@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - ALI MUSIC</title>
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HXlQXcFS3LnkJl-Ks2nKAjSIlt0SjyyzWLDogeBTpSySTAnpB_19U-SnjvYCENjhwQgwNeOWp4ZEgNdEmFPjTA" charset="UTF-8"></script><script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoo.png">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="contacts.css">
+
+    <script src="contacts.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html" id="contacts">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav class="socials" style="margin-right: -31px;" >
+            <a href="https://vk.com/idtulebergenov" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/tulebergenov" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+
+    <div class="layout-content">
+        <div class="contacts-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contacts-item">
+                            <h5>Сотрудничество:</h5>
+                            <a href="mailto:190103305@stu.sdu.edu.kz">190103305@stu.sdu.edu.kz</a>
+                        </div>
+                        <div class="contacts-item">
+                            <h5>Booking:</h5>
+                            <a href="mailto:aslan.mussakulov@gmail.com">aslan.mussakulov@gmail.com</a>
+                        </div>
+                        <div class="contacts-item">
+                            <h5>SMM Director:</h5>
+                            <a href="mailto:alber.adilov@gmail.com">alber.adilov@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="contacts-form">
+                            <h5>SEND YOUR PROPOSALS</h5>
+                            <form action="#">
+                                <input class="contacts-input" name="email" placeholder="YOUR EMAIL" type="email">
+                                <div class="position-relative">
+                                    <textarea class="contacts-input contacts-textarea" name="message" placeholder="YOUR MESSAGE" rows="13"></textarea>
+                                    <div class="submit-btn-carrier">
+                                        <div class="btn btn-default btn-sm">send</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="contacts-item" style="margin-top: 70px;">
+                            <h5 id="studio">The locations of our studios</h5> <hr>
+                            <h5>Sound Producer:</h5>
+                            <a href="mailto:torebi.nauan@gmail.com">torebi.nauan@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="map"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+  
+
+    <footer class="layout-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sdu"><b>Suleyman Demirel University</b></div>
+                <div class="lgo">
+                    <img src="images/logo.png" style="width: 47px;" alt="">
+                </div>
+                <div class="ftr"><b>© 2020 OOO "ALI MUSIC"</b></div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const menu = document.querySelector('.h-menu')
+const nav = document.querySelector('.nav')
+
+let isOpen = false
+
+menu.addEventListener('click', () => {
+   
+   if (isOpen) {
+      nav.style.display = 'none'
+      isOpen = false
+   } else {
+      nav.style.display = 'block'
+      isOpen = true
+   }
+
+   menu.classList.toggle('open')
+});
+</script>
+
+    
+
+    <script src="contacts.js"></script>
+    
+</body>
+</html>
