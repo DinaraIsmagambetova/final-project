@@ -1,200 +1,44 @@
-const audio = document.querySelector('#audio'),
-      cass = document.querySelector('.cassette');
-      text = document.querySelector('.name');
 
-audio.addEventListener('play', () => {
-   cass.classList.add('active');
-   text.classList.add('active-name');
+
+$(document).ready(function () {
+   $("#read-button").click(function () {
+       $("#text-ktl").slideToggle(400);
+   });
 });
 
-audio.addEventListener('pause', () => {
-   cass.classList.remove('active');
-   text.classList.remove('active-name');
+$(document).ready(function () {
+   $("#top-button").click(function () {
+       $("#text-top").slideToggle(400);
+   });
 });
 
+$(document).ready(function () {
+   $("#code-button").click(function () {
+       $("#text-code").slideToggle(400);
+   });
+});
 
-function Playtruwer() {
-   var myAudio = document.getElementById("audio");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
+$(document).ready(function () {
+   $("#young-button").click(function () {
+       $("#text-young").slideToggle(400);
+   });
+});
+
+var myAudios=document.getElementsByClassName("music");
+var myButtons=document.getElementsByClassName("buttons");
+
+function playMusic(n) {
+    var myAudio = myAudios[n];
+    var myBtn=myButtons[n]
+    if(myAudio.paused) {
+       myAudio.play();
+       myBtn.innerHTML="Pause";
+         }
+    else {
+       myAudio.pause();
+       myBtn.innerHTML="Play";
+    }
 }
-
-
-function Play() {
-   var myAudio = document.getElementById("audio2");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playasap() {
-   var myAudio = document.getElementById("audio3");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playlive() {
-   var myAudio = document.getElementById("audio4");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playkod() {
-   var myAudio = document.getElementById("audio5");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playredbone() {
-   var myAudio = document.getElementById("audio6");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playcrash() {
-   var myAudio = document.getElementById("audio7");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playjoji() {
-   var myAudio = document.getElementById("audio8");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playout() {
-   var myAudio = document.getElementById("audio9");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playgoing() {
-   var myAudio = document.getElementById("audio10");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playevery() {
-   var myAudio = document.getElementById("audio11");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playbetter() {
-   var myAudio = document.getElementById("audio12");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playscrip() {
-   var myAudio = document.getElementById("audio13");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playsplashin() {
-   var myAudio = document.getElementById("audio14");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playtfest() {
-   var myAudio = document.getElementById("audio15");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playlife() {
-   var myAudio = document.getElementById("audio16");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Play6lack() {
-   var myAudio = document.getElementById("audio17");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-function Playholly() {
-   var myAudio = document.getElementById("audio18");
-   if(myAudio.paused) {
-      myAudio.play();
-        }
-   else {
-      myAudio.pause();
-   }
-}
-
-
 
 const menu = document.querySelector('.h-menu')
 const nav = document.querySelector('.nav')
@@ -212,6 +56,25 @@ menu.addEventListener('click', () => {
    }
 
    menu.classList.toggle('open')
+});
+
+//AOS initialization
+AOS.init({
+   disable: false, 
+   startEvent: 'DOMContentLoaded', 
+   initClassName: 'aos-init', 
+   animatedClassName: 'aos-animate', 
+   useClassNames: false, 
+   disableMutationObserver: false,
+   debounceDelay: 50, 
+   throttleDelay: 99, 
+   offset: 120, 
+   delay: 0, 
+   duration: 750, 
+   easing: 'ease', 
+   once: false, 
+   mirror: false, 
+   anchorPlacement: 'top-bottom', 
 });
 
 

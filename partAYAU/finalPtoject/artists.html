@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists - ALI MUSIC</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoo.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rsVi9vE2VpRuacWMckSaRWRSoKVlZ6R4eVDTukGrREwE29DXk3XszylSsiPJOQ0E5wbO8mAWuxWCtQY4tHSG_Q" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="artists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html" id="artists">Artists</a></b></li>
+                <li><b><a href="videos.html">Videos</a></b></li>
+                <li><b><a href="playlists.html">Playlists</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav class="socials" style="margin-right: -31px;" >
+            <a href="https://vk.com/idtulebergenov" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="https://www.instagram.com/tulebergenov" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div class="artists">
+        <div class="container">
+
+            <a class="artist-item"  style="text-decoration: none;">
+                <div class="artist-logo">
+                    <div id="name">Twenty Øne PilØts</div>
+                </div>
+                <div class="artist-btn">
+                <button onclick="info()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Darkhan Juzz</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info2()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Ed Sheeran</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info3()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Moldanazar</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info4()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Eminem</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info5()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Imagine Dragons</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info6()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Passenger</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info7()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Lorde</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info8()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+            <a class="artist-item" style="text-decoration: none;" target="_blank">
+                <div class="artist-logo">
+                    <div id="name">Lana Del Rey</div>
+                </div>
+                <div class="artist-btn">
+                    <button onclick="info9()" class="btn btn-default">Перейти к артисту</button>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="info-content">
+            <img onclick="close_info()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/21pilots.png" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name">Twenty Øne PilØts</h2>
+                <p class="pilots-info">The group was formed in 2009 in Columbus and originally consisted of college friends Tyler Joseph, Nick Thomas and Chris Salih. On December 29, 2009, the group recorded their debut album. In 2011, Nick and Chris leave the group, citing a too tight schedule of performances that interferes with their studies and personal life. Then Josh Dan joined the group. On January 8, 2013, the group's first full-length studio album was released. Vessel ". The album reached # 58 on the Billboard 200. On May 19, 2015, the band's fourth (second studio) album, Blurryface, was released. The album was well received by both fans and critics. Blurryface debuted at # 1 on the Billboard 200. the group has released two new songs titled "Jumpsuit" and "Nico and the Niners", as well as an announcement for their fifth studio album, "Trench", due out soon on October 5</p>
+                <a class="btn btn-default btn-sm" id="word21"   href="https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx?si=skSfNLRBSdijnxm5TaTsEw" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info2">
+        <div class="info-content">
+            <img onclick="close_info2()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/juzz.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-juzz">Darkhan Juzz</h2>
+                <p class="pilots-info">The star of qazaq indie - trap performer Darkhan Juzz began his creative career on the Arbat, and one of the best hits “Sheker” composed in the back room of the restaurant, where he worked as a waiter. Aksai boy from the district, Darkhan literally grew up with a guitar in his hands. According to him, he played at least six hours a day after school and another hour in the morning. Then he began to compose songs. Honest lyrics and an unusual, original style quickly found their listeners. Darkhan was not shown on TV or played on the radio, but thousands of people on Vkontakte added his songs and downloaded the same number to their phones. “I grew up on the streets of Aksai and after finishing 9th grade I entered the profession of a designer in college, which I dropped out after a year and a half. I have neither musical nor any other profession. I don't even know the notes, but I know and love music. "</p>
+                <a class="btn btn-default btn-sm" id="wordjuzz"  href="https://open.spotify.com/artist/2RntBZZLAjvQxQhOKHHhX9?si=Aw56DHRgQTefH0tu6Kao4A" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info3">
+        <div class="info-content">
+            <img onclick="close_info3()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/ed-sheeran.jpg" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-edsheeran">Ed Sheeran</h2>
+                <p class="pilots-info">Ed Sheeran is an English singer and songwriter, multiple Grammy winner. His albums with exclusive titles in the form of signs of mathematical operations of addition, multiplication and division - "+", "x" and "÷" - at various times topped the national UK Albums Chart.In 2011, Ed Sheeran signed a contract with the American record label Atlantic Records, and in September his debut studio album entitled "+" was released. Ed's new album "X" appeared in June 2014 and immediately took off to the first lines of the US charts. and the UK. In 2015, the British artist received the Brit Award for Best Songwriter of the Year. In March 2017, Ed Sheeran delighted fans by adding his third studio album, “÷”.A few months before its release, he presented two singles from the new disc - "Shape of You" and "Castle on the Hill".</p>
+                <a class="btn btn-default btn-sm" id="wordsheeran" href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V?si=WP4xWGCJT-ica4G6WXd9vw" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info4">
+        <div class="info-content">
+            <img onclick="close_info4()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/moldanazar.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-moldanazar">Moldanazar</h2>
+                <p class="pilots-info">Galymzhan was born in Kyzylozek, in the 10th grade he began to write songs, then ended up in Kyzylorda, studied at the Zhurgenov Kazakh National Academy of Arts in Almaty. For the first time the local audience saw him at the music symposium of the Hit TV channel in May of the same year, where he sang the song “Жылама жүрегім” with the rock star Asem. He became widely known to the public in 2013, after the clip "Aқпен бірге". In 2015 he founded the Moldanazar group. In the same year, the American rock cellist group Break of Reality performed in Almaty on the stage of the Zhambyl State Philharmonic Society, where they met Galymzhan. After that Moldanazar and Break of Reality performed together at one of the New York venues. The concert was also attended by Kazakhstanis living in the USA. Another video for "Ақпен Бірге" was shot there.</p>
+                <a class="btn btn-default btn-sm" id="wordmolda" href="https://open.spotify.com/artist/1bYE7N4miu1B9YOETbsxc4?si=Y2f0MSB-T4m7CBKH7lVxrw" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info5">
+        <div class="info-content-eminem">
+            <img onclick="close_info5()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/eminem2.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-eminem">Eminem</h2>
+                <p class="pilots-info-eminem">Eminem was born on October 17, 1972 in St. Joseph, Missouri. Father left the family when Marshall was not even a year old. Then the family settled in Detroit, but even there it was not easy for Marshall - he often changed schools, got into fights. Carried away by rap, Marshall came up with songs at the age of 13, and at 15 he founded his own group.
+                    After graduating from high school, Eminem tried several low-paid jobs, performed on the radio. The next year, in the biography of Marshall Mathers, the first album "Infinite" was released, which did not become particularly successful. Having started to cooperate with Dr. Dre, Eminem has released "Slim Shady LP". Then he signed a contract with Aftermath Entertainment. In 2001, Eminem's biography received three Grammy awards. The singer also became a member of the group D12. In 2002 the album "The Eminem Show" was released, in 2004 - "Encore". In 2001 he played in the film "The Wash". The film "8 Mile" achieved great success in 2002, and for the song "Lose Yourself" Eminem received an Oscar.</p>
+                <a class="btn btn-default btn-sm" id="word3" href="https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR?si=EjJlgXRZTVSXbmt9Ngr59A" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info6">
+        <div class="info-content">
+            <img onclick="close_info6()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/imagine.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-imagine">Imagine Dragons</h2>
+                <p class="pilots-info-imagine">The history of the creation of the Imagine Dragons began in 2008, after Daniel met drummer Andrew Tolman. They got their first success after participating in the Bité of Las Vegas and Vegas Music Summit, where they performed in front of an audience of 26,000 as headliners. Before signing the contract, Imagine Dragons managed to record 3 mini-albums. The debut EP of the same name was released on September 1, 2009, June 1, 2010 - Hell and Silence, March 12, 2011 - It's Time. On September 4, 2012, Imagine Dragons presented the album Night Vision. On February 17, 2015, the band's new album, Smoke + Mirrors, was presented. In 2017, 2 years later, the third studio album Evolve was released and became a treasure trove of real hits such as Thunder, Believer and Whatever it Takes. 9 November 2018, the discography of the rock band was replenished with another disc called Origins.</p>
+                <a class="btn btn-default btn-sm" id="word4"  href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=AKjxCWLgRoeVPPwBHlYliA" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info7">
+        <div class="info-content">
+            <img onclick="close_info7()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/passenger2.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-passenger">Passenger</h2>
+                <p class="pilots-info">Michael David Rosenberg was born in England, in the city of Brighton and Hove, on May 17, 1984. It was he, together with singer Andrew Phillips, who organized the famous and popular Passenger group, which is still popular today. The group was created in 2003 and consists of 5 members. The guys created their only album called "Wicked Mans Rest". The album was released in 2007 and is still popular today. In 2013, the singer received an award for the best folk composition, David wrote most of the songs for his group himself. The artist's alternative music is liked by many people, already in many countries, connoisseurs of the alternative had the opportunity to get acquainted with the singer's work closer. Now he continues to work with music, has no desire to build his own family. The singer wrote many good, popular songs, which he performs on his own in front of an audience of millions.</p>
+                <a class="btn btn-default btn-sm" id="word5" href="https://open.spotify.com/artist/0gadJ2b9A4SKsB1RFkBb66?si=Y_NmWgjhSBijbsEvmG7bwQ" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info8">
+        <div class="info-content">
+            <img onclick="close_info8()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/lorde.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-lorde">Lorde</h2>
+                <p class="pilots-info">New Zealand singer, songwriter and music producer. Her debut single "Royals", released in March 2013 and winning the Grammy Award for Best Song of the Year, became a worldwide hit, topping the national charts in New Zealand, Italy, Great Britain. as well as the Billboard Hot 100 chart, making Lord the only New Zealand performer with such an achievement. Their debut album, Pure Heroine, featuring producer Joel Little, was released on September 27, 2013, to a critical acclaim and debuted at number three on the Billboard 200. In 2014, Lord recorded the song "Yellow Flicker Beat", which was released as a single to the soundtrack The Hunger Games: Mockingjay. In June 2017, Lord's second studio album, Melodrama, was released. The disc is the most critically acclaimed performer's album for 2017. Singles such as "Green Light" and "Perfect Places" were released in support of the disc.</p>
+                <a class="btn btn-default btn-sm" id="word4" href="https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm?si=3hu495o-TjqYXgmrHBNSpw" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="info9">
+        <div class="info-content">
+            <img onclick="close_info9()" class="closed" src="images/close.png" width="7%" alt="">
+            <div id="change">
+                <img src="images/lanadelrey.JPG" style="width: 27%; border-radius: 50%;" alt="">
+                <h2 class="pilots-name-lana">Lana Del Rey</h2>
+                <p class="pilots-info">Lana Del Rey is an American singer who won the love of listeners with her biographical songs with a dark aesthetic. Bribing sincerity is intertwined with obscene vocabulary, and light energy - with daring sexuality. In January 2010, the album “Lana Del Ray a.k.a. Lizzy Grant ". At the end of 2011, the singer presented the single "Born to Die", anticipating the release of the album of the same name, which took the fifth position among the best-selling albums of the year. Critics have called it a link between modern hip-hop culture and classical pop music, equipped with jazz elements. In 2014, her new album "Ultraviolence" is released, which Del Rey calls "conceptual" and the genre refers to "psychedelic rock". A year later, the singer delighted the audience with her new album "Honeymoon". In 2017, the album "Lust For Life" was released, in which the rapper The Weeknd, ASAP Rocky also took part.</p>
+                <a class="btn btn-default btn-sm" id="word4" href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?si=B-7NnhaFTOeJ7eQPUl8IwQ" target="_blank">Слушать</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <footer class="layout-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sdu"><b>Suleyman Demirel University</b></div>
+                <div class="lgo">
+                    <img src="images/logo.png" style="width: 47px;" alt="">
+                </div>
+                <div class="ftr"><b>© 2020 OOO "ALI MUSIC"</b></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="artists.js"></script>
+    
+</body>
+</html>

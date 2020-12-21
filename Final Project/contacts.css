@@ -4,7 +4,7 @@
 ::-webkit-scrollbar { /* chrome based */
     width: 0px;  /* ширина scrollbar'a */
     background: transparent;  /* опционально */
-    
+
 }
 
 body {
@@ -12,14 +12,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #24252A;
-    background-image: url(images/36.jpg);
+    background-image: url(https://i.pinimg.com/564x/ca/fd/fc/cafdfc633848d8f4d956fc60cd77b569.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     overflow-x: hidden;
-    
+
 }
 
 .nav li, a {
@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    
+
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,7 @@ header {
     backdrop-filter: blur(15px);
     z-index: 2;
     width: 100%;
-    
+
 }
 
 .h-menu {
@@ -49,7 +49,7 @@ header {
     cursor: pointer;
     display: none;
  }
- 
+
  .h-menu span {
     width: 80%;
     height: 4px;
@@ -59,16 +59,16 @@ header {
     margin-top: 10px;
     transition: all 0.4s ease-out;
  }
- 
+
  .h-menu.open span:nth-child(2) {
     background-color: #333;
     display: none;
  }
- 
+
  .h-menu.open span:nth-child(1) {
     transform: rotate(45deg) translateX(11px) translateY(7px);
  }
- 
+
  .h-menu.open span:nth-child(3) {
     transform: rotate(-45deg) translateX(2px) translateY(1px);
  }
@@ -76,7 +76,7 @@ header {
 #logo {
     cursor: pointer;
     width: 52px;
-    
+
 }
 
 .nav__links li {
@@ -84,7 +84,7 @@ header {
     padding: 0px 20px;
     margin-top: 15px;
     /* text-decoration: none; */
-    
+
 }
 
 .nav__links li a {
@@ -94,7 +94,7 @@ header {
 
 .nav__links li a:hover {
     color: #00889a;
-    
+
 }
 
 #contacts {
@@ -171,7 +171,7 @@ a:hover {
 
 .contacts-form {
     font-family: 'montserrat';
-    
+
 }
 
 .contacts-form h5 {
@@ -271,7 +271,7 @@ a:hover {
 
 
 #map {
-    margin-top: 70px;
+    margin-top: 90px;
     height: 350px;
     width: 100%;
     border-radius: 10px;
@@ -286,15 +286,15 @@ a:hover {
     header {
        padding: 40px;
     }
- 
+
     .h-menu {
         display: block;
     }
- 
+
     #social {
         display: none;
     }
-     
+
     .nav {
         display: none;
         position: fixed;
@@ -307,7 +307,7 @@ a:hover {
         animation-name: fade;
         animation-duration: 0.5s;
     }
- 
+
     .nav__links {
         padding-right: 37px;
         width: 100%;
@@ -316,24 +316,35 @@ a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
+
     }
 
-    #map {
-        margin-top: -30px;
+    #map{
+        height: 400px;
+        width: 100%;
     }
- 
+    .maps{
+        background-color: rgb(34, 32, 32);
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #p_map{
+      color: whitesmoke;
+      font-family: 'Rokkitt', serif;
+      text-align: center;
+      font-size: 52px;
+    }
+
 }
- 
- 
+
+
 @keyframes fade {
     from {
        opacity: 0;
-    } to {   
+    } to {
        opacity: 0.9;
     }
 }
- 
-
-
-
