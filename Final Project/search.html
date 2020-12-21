@@ -17,7 +17,7 @@
 
     <header>
         <a href="index.html">
-            <img class="header-logo logo-rotate" id="logo" src="images/logo.png" alt="">
+            <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
         </a>
         <nav class="nav">
             <ul class="nav__links">
@@ -46,4 +46,62 @@
         </nav>
 
     </header>
+    <div id="main">
+        <h2>Available Songs</h2>
+        
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for songs" title="Type in a name">
+        
+        <ul id="myUL">
+          <li><a href="#">Adele</a></li>
+          <li><a href="#">Someone</a></li>
+        
+          <li><a href="#">Billy</a></li>
+          <li><a href="#">Bob</a></li>
+        
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Christina</a></li>
+          <li><a href="#">Cindy</a></li>
+        </ul>
+    </div>
+    <script>
+        function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+    <div class="found">
+        <div class="news-item" style="background-image: url(images/ik2.JPG)">
+            <div class="news-item-content">
+                
+                <div class="news-item-body">
+                    <div class="news-item-title">
+                        <b>Premiere of the album Ирина Кайратовна</b>
+                        <p>13 Выпуск</p>
+                    </div>
+                    <div class="news-item-footer">
+                        <a class="btn btn-default btn-sm buttons" href="##" onClick="playMusic(0)">Play</a>
+                    </div>
+                    <audio class="music" controls>
+                        <source src="audio/Ирина Кайратовна - Интро.mp3">
+                    </audio>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="search.js"></script>
+        
+        
 </body>

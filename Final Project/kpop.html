@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" href="images/ico.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ixog_uL-qWcymPkEP6PhNKFaPT3KSJ_HjAQ0I-5_TXCDDorAJFyxSeDBeFetyldZYBmofwLe748MAClhfipu6A" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="videos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="header-logo logo-rotate" id="logo" src="images/ico.ico">
+        </a>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><b><a href="index.html">Main</a></b></li>
+                <li><b><a href="artists.html">Artists</a></b></li>
+                <li><b><a href="videos.html" id="videos">Videos</a></b></li>
+                <li><b><a href="playlists.html">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
+                <li><b><a href="contacts.html">Contacts</a></b></li>
+            </ul>
+        </nav>
+        
+        <nav style="margin-right: -31px;" >
+            <a href="" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
+            </a>
+            <a href="" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/twitter.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
+            </a>
+            <a href="https://www.youtube.com" style="text-decoration: none;" target="_blank">
+                <img id="social" src="images/youtube.png" alt="" style="width: 23px; margin-bottom: 5px;">
+            </a>
+        </nav>
+
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div class="layout-content">
+        <div class="container content-container" >
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="page-sidebar">
+                        
+                        <div class="sidebar-body">
+                            <nav class="sidebar-menu" id="parts">
+                                <a class="text" style="text-decoration: none;" href="videos.html">POP Top 10</a>
+                                <a class="text" style="text-decoration: none;" href="kaz.html">KZ Top 10</a>
+                                <a class="text"  id="topcharts"style="text-decoration: none;" >KPOP Top 10</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="page-content" style="display: block;">
+                        <div class="content-body">
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Uptown Funk</span>
+                                            <span class="video-artist">Mark Ronson ft. Bruno Mars</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(0)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Dynamite</span>
+                                            <span class="video-artist">BTS</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(1)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Uptown Funk</span>
+                                            <span class="video-artist">Mark Ronson ft. Bruno Mars</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(2)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Dynamite</span>
+                                            <span class="video-artist">BTS</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(3)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Uptown Funk</span>
+                                            <span class="video-artist">Mark Ronson ft. Bruno Mars</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(4)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Dynamite</span>
+                                            <span class="video-artist">BTS</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(5)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Uptown Funk</span>
+                                            <span class="video-artist">Mark Ronson ft. Bruno Mars</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(6)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Dynamite</span>
+                                            <span class="video-artist">BTS</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(7)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="video-items row">
+
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Uptown Funk</span>
+                                            <span class="video-artist">Mark Ronson ft. Bruno Mars</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(8)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <a class="video-item">
+
+                                        <div class="video-cover">
+                                            <img src="images/video-dynamite.jpg"/>
+                                        </div>
+                                        <div class="video-details">
+                                            <span class="video-title">Dynamite</span>
+                                            <span class="video-artist">BTS</span>
+                                        </div>
+                                        <div>
+                                            <button onclick="displayVideo(9)" class="btn btn-default watch">Watch</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/lWA2pjMjpBs" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(0)"/>
+    </div>
+    <div class="youtube">
+        <iframe class="videos" src="https://www.youtube.com/embed/LyKYV_7vs6k" ></iframe>
+        <img src="images/close1.png" class="close" onclick="closeVideo(1)"/>
+    </div>
+    <div class="youtube">
+        <object data="https://youtu.be/2S24-y0Ij3Y" controls="control"></object>
+        <img src="images/close1.png" class="close" onclick="closeVideo(2)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(3)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(4)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(5)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(6)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(7)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(8)"/>
+    </div>
+    <div class="youtube">
+        <video class="videos" src="https://youtu.be/2S24-y0Ij3Y" controls="control">
+        </video>
+        <img src="images/close1.png" class="close" onclick="closeVideo(9)"/>
+    </div>
+
+    <script src="kpop.js"></script>
+</body>
+</html>
+               
