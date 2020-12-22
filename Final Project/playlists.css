@@ -124,12 +124,8 @@ header {
     min-height: 100vh;
 }
 
-.container content-container {
+.container{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 
 }
 
@@ -145,7 +141,6 @@ header {
 .page-sidebar {
     display: flex;
     flex-direction: column;
-    position: fixed;
     padding-top: 28px;  
     margin-left: -70px;
     
@@ -175,14 +170,12 @@ header {
 .col-md-9 {
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 35px;
     flex-basis: 75%;
 }
 
 .page-content .content-body {
-    padding: 30px;
     padding-top: 20px;
+    overflow-x: hidden;
 }
 
 .page-content {
@@ -284,24 +277,20 @@ header {
 }
 
 
-#parts {
-    width: 380px;
-}
-
 
 @media(max-width:576px) {
     header {
-       padding: 20px;
-    }
+        padding: 40px;
+     }
  
-    .h-menu {
-        display: block;
-    }
+     .h-menu {
+         display: block;
+     }
  
-    #social {
-        display: none;
-    }
-     
+     #social {
+         display: none;
+     }
+ 
     .nav {
         display: none;
         position: fixed;
@@ -314,7 +303,7 @@ header {
         animation-name: fade;
         animation-duration: 0.5s;
     }
- 
+
     .nav__links {
         padding-right: 37px;
         width: 100%;
@@ -323,58 +312,77 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
+
     }
 
     .layout-content {
-        
-        padding-top: 100px;            /* здесь тоже, было 120px */
-        
+        padding-top: 120px; 
     }
 
     .content-body {
-        width: 50%;
-        height: 100%;
-        margin-left: -5px;
-    }
-
-    .page-content .content-body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 0px;
-        padding-top: 10px;
         text-align: center;
         
-        
- 
     }
 
     .page-content {
+        width: 100%;
         background: rgba(0,0,0,0);
         position: unset;
-
-        min-height: 0;
-        background: rgba(0,0,0,.7);
-        
         overflow: unset;
-                       
-              
-        
     
     }
     
     .col-md-3 {
         width: 100%;
-        margin-left: 60px;
-        
-        
-        
+        padding: 10px 20px 0px 20px;
     }
 
     .page-sidebar {
-        position: unset;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: 1px;
         padding-top: 0; 
         margin-left: 0;
+    }
+    .sidebar-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
+    .text {
+        padding: 5px;
+    }
+    .album-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .album-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .album-cover{
+        width: 300px;
+        height: 300px;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .text {
@@ -387,6 +395,14 @@ header {
         font-size: 8px;
         
     }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
  
 }
  

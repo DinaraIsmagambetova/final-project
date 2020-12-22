@@ -1,19 +1,4 @@
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
+
 var myAudios=document.getElementsByClassName("music");
 var myButtons=document.getElementsByClassName("buttons");
 
@@ -29,6 +14,7 @@ function playMusic(n) {
        myBtn.innerHTML="Play";
     }
 }
+
 var mvs=document.getElementsByClassName("news-item");
 
 function displayBlock(n){
@@ -42,3 +28,40 @@ function closeBlock(n){
     $(mvs[n]).animate({opacity:"0"});
     document.body.style.overflowY="scroll";
 }
+
+const menu = document.querySelector('.h-menu')
+const nav = document.querySelector('.nav')
+
+let isOpen = false
+
+menu.addEventListener('click', () => {
+   
+   if (isOpen) {
+      nav.style.display = 'none'
+      isOpen = false
+   } else {
+      nav.style.display = 'block'
+      isOpen = true
+   }
+
+   menu.classList.toggle('open')
+});
+
+//AOS initialization
+AOS.init({
+   disable: false, 
+   startEvent: 'DOMContentLoaded', 
+   initClassName: 'aos-init', 
+   animatedClassName: 'aos-animate', 
+   useClassNames: false, 
+   disableMutationObserver: false,
+   debounceDelay: 50, 
+   throttleDelay: 99, 
+   offset: 120, 
+   delay: 0, 
+   duration: 750, 
+   easing: 'ease', 
+   once: false, 
+   mirror: false, 
+   anchorPlacement: 'top-bottom', 
+});

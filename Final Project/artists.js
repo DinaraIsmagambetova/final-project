@@ -1,3 +1,21 @@
+const menu = document.querySelector('.h-menu')
+ const nav = document.querySelector('.nav')
+ 
+ let isOpen = false
+ 
+ menu.addEventListener('click', () => {
+    
+    if (isOpen) {
+       nav.style.display = 'none'
+       isOpen = false
+    } else {
+       nav.style.display = 'block'
+       isOpen = true
+    }
+ 
+    menu.classList.toggle('open')
+ });
+
 var artistsList=document.getElementsByClassName("artist");
 var infosList=document.getElementsByClassName("aboutItems");
 
@@ -29,3 +47,6 @@ AOS.init({
     mirror: false, 
     anchorPlacement: 'top-bottom', 
 });
+
+
+ 

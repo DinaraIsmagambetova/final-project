@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans+JP:wght@900&display=swap');
 
-::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
+::-webkit-scrollbar { 
+    width: 0px; 
+    background: transparent; 
 
 }
-
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
 body {
     box-sizing: border-box;
     margin: 0;
@@ -112,57 +117,12 @@ header {
 
 
 .layout-content {
-    padding-top: 110px;
-    /* min-height: 100vh; */
-}
-
-.contacts-wrapper {
-    margin-top: 100px;
-}
-
-.container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    height: auto;
+    padding: 100px 50px 5%;
 }
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.col-md-6 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.contacts-item {
-    margin-bottom: 70px;
-    font-family: 'montserrat',sans-serif;
-    letter-spacing: 1px;
-    color: white;
-    text-transform: uppercase;
-}
-
-.contacts-item h5 {
-    font-weight: 600;
-    font-size: 13px;
-}
-
-.contacts-item a {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
+#prod{
+    margin: 50px 0px 50px 0px;
 }
 
 a:hover {
@@ -173,11 +133,8 @@ a:hover {
     font-family: 'montserrat';
 
 }
-
-.contacts-form h5 {
-    font-weight: 600;
+h5 {
     font-size: 14px;
-    margin-bottom: 20px;
     color: white;
     text-transform: uppercase;
 }
@@ -211,11 +168,6 @@ a:hover {
     right: 10px;
 }
 
-.btn-sm {
-    padding: 5px 23px;
-    margin-top: 7px;
-}
-
 .btn-default {
 
     color: white;
@@ -237,16 +189,11 @@ a:hover {
     color: black;
 }
 
-
-
-
 .layout-footer {
-    padding: 100px 40px 50px;
+    padding: 0px 40px 50px 40px;
     font-size: 13px;
     text-transform: uppercase;
-    margin-top: 30px;
 }
-
 .container-fluid {
     width: 100%;
     padding-right: 50px;
@@ -259,27 +206,82 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: -15px;
-    margin-left: -15px;
     color: white;
     font-family: 'Montserrat';
 }
 
-.lgo {
-    margin-left: -30px;
+.col-md-6{
+    padding: 30px;
 }
-
-
+.col-md-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/**
+.maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*/
 #map {
-    margin-top: 90px;
-    height: 350px;
+    height: 50vh;
     width: 100%;
     border-radius: 10px;
 }
 
-#studio {
-    font-size: 17px;
-}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+  .flip-card img{
+    border-radius: 50px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+    position: absolute;
+  }
+  
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: 0 0;
+    border: 1px solid white;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
 
 @media(max-width:576px) {
@@ -324,18 +326,11 @@ a:hover {
         width: 100%;
     }
     .maps{
-        background-color: rgb(34, 32, 32);
-        height: 600px;
+        height: auto;
         display: flex;
         flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    #p_map{
-      color: whitesmoke;
-      font-family: 'Rokkitt', serif;
-      text-align: center;
-      font-size: 52px;
+        align-items: center;
+        justify-content: center;
     }
 
 }

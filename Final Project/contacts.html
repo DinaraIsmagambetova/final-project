@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts - A.D.A music</title>
+    <title>TRIXBEAT</title>
+    <link rel="shortcut icon" href="images/ico.ico">
 
     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HXlQXcFS3LnkJl-Ks2nKAjSIlt0SjyyzWLDogeBTpSySTAnpB_19U-SnjvYCENjhwQgwNeOWp4ZEgNdEmFPjTA" charset="UTF-8"></script><script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
@@ -16,14 +17,12 @@
 
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly" defer></script>
 
     <link rel="stylesheet" href="contacts.css">
 
-    <script src="contacts.js"></script>
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -69,62 +68,85 @@
 
 
     <div class="layout-content">
-        <div class="contacts-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="contacts-item">
-                            <h5>Сотрудничество:</h5>
-                            <a href="mailto:190103078@stu.sdu.edu.kz">190103078@stu.sdu.edu.kz</a>
+        <div class="row" id="prod">
+
+            <div class="col-md-4" data-aos="zoom-out" data-aos-delay="200">
+                <h3>CODER:</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Assel.png" alt="Avatar" style="width:300px;height:300px;">
                         </div>
-                        <div class="contacts-item">
-                            <h5>Booking:</h5>
-                            <a href="mailto:190103084@stu.sdu.edu.kz">190103084@stu.sdu.edu.kz</a>
-                        </div>
-                        <div class="contacts-item">
-                            <h5>SMM Director:</h5>
-                            <a href="mailto:190103266@stu.sdu.edu.kz">190103266@stu.sdu.edu.kz</a>
+                        <div class="flip-card-back">
+                            <h3>Assel Zholdasbekova</h3> 
+                            <p>CODER</p> 
+                            <p>190103084@stu.sdu.edu.kz</p>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md-6">
-                        <div class="contacts-form">
-                            <h5>SEND YOUR PROPOSALS</h5>
-                            <form action="#">
-                                <input class="contacts-input" name="email" placeholder="YOUR EMAIL" type="email">
-                                <div class="position-relative">
-                                    <textarea class="contacts-input contacts-textarea" name="message" placeholder="YOUR MESSAGE" rows="13"></textarea>
-                                    <div class="submit-btn-carrier">
-                                        <div class="btn btn-default btn-sm">send</div>
-                                    </div>
-                                </div>
-                            </form>
+            <div class="col-md-4" data-aos="zoom-out" data-aos-delay="400">
+                <h3>DESIGNER:</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Ayaulym.png" alt="Avatar" style="width:300px;height:300px;">
                         </div>
-
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="contacts-item" style="margin-top: 70px;">
-                            <h5 id="studio">The locations of our studios</h5> <hr>
-                            <h5>Sound Producer:</h5>
-                            <a href="mailto:ayautulendieva@gmail.com">ayautulendieva@gmail.com</a>
+                        <div class="flip-card-back">
+                            <h3>Ayaulim Tulendieva</h3> 
+                            <p>DESIGNER</p> 
+                            <p>190103078@stu.sdu.edu.kz</p>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="maps">
-                        <div class="map_info">
-                            <p id="p_map">Our address on Google Maps</p>
+            <div class="col-md-4" data-aos="zoom-out" data-aos-delay="600">
+                <h3>CREATOR:</h3>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Dinara.png" alt="Avatar" style="width:300px;height:300px;">
                         </div>
-                        <div id="map"></div>
+                        <div class="flip-card-back">
+                            <h3>Dinara Ismagambetova</h3> 
+                            <p>CREATOR</p> 
+                            <p>190103266@stu.sdu.edu.kz</p>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
         </div>
+
+        <div class="contacts-wrapper row">
+
+            <div class="col-md-6">
+                <div class="contacts-form">
+                    <h5>SEND YOUR OFFERS</h5>
+                    <form action="#">
+                        <input class="contacts-input" name="email" placeholder="YOUR EMAIL" type="email">
+                        <div class="position-relative">
+                            <textarea class="contacts-input contacts-textarea" name="message" placeholder="YOUR MESSAGE" rows="13"></textarea>
+                            <div class="submit-btn-carrier">
+                                <div class="btn btn-default btn-sm">SEND</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="maps col-md-6">
+                <div>
+                    <h5>Find us</h5>
+                </div>
+                <div id="map"></div>
+            </div>
+
+        </div>
+         
     </div>
-
-
 
 
     <footer class="layout-footer">
@@ -132,34 +154,35 @@
             <div class="row">
                 <div class="sdu"><b>Suleyman Demirel University</b></div>
                 <div class="lgo">
-                    <img src="images/ico.ico" style="width: 47px;" alt="">
+                    <img src="images/ico.ico    " style="width: 47px;" alt="">
                 </div>
-                <div class="ftr"><b>© 2020  "A.D.A production "</b></div>
+                <div class="ftr"><b>&copy 2020 "TRIXBEAT"</b></div>
             </div>
         </div>
     </footer>
 
-<script>
-    const menu = document.querySelector('.h-menu')
-const nav = document.querySelector('.nav')
+    <script>
+        const menu = document.querySelector('.h-menu')
+        const nav = document.querySelector('.nav')
 
-let isOpen = false
+        let isOpen = false
 
-menu.addEventListener('click', () => {
+        menu.addEventListener('click', () => {
 
-   if (isOpen) {
-      nav.style.display = 'none'
-      isOpen = false
-   } else {
-      nav.style.display = 'block'
-      isOpen = true
-   }
+        if (isOpen) {
+            nav.style.display = 'none'
+            isOpen = false
+        } else {
+            nav.style.display = 'block'
+            isOpen = true
+        }
 
-   menu.classList.toggle('open')
-});
-</script>
+        menu.classList.toggle('open')
+        });
+    </script>
 
-
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="contacts.js"></script>
 

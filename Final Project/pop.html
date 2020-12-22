@@ -11,6 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!--aos CSS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="playlists.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -27,15 +30,16 @@
                 <li><b><a href="artists.html">Artists</a></b></li>
                 <li><b><a href="videos.html">Videos</a></b></li>
                 <li><b><a href="playlists.html" id="playlists">Playlists</a></b></li>
+                <li><b><a href="search.html">Search</a></b></li>
                 <li><b><a href="contacts.html">Contacts</a></b></li>
             </ul>
         </nav>
         
         <nav style="margin-right: -31px;" >
-            <a href="https://vk.com/dinyanyaa" style="text-decoration: none;" target="_blank">
+            <a href="https://vk.com/id321027378" style="text-decoration: none;" target="_blank">
                 <img id="social" src="images/vk.png" alt="" style="width: 30px; padding-right: 10px; margin-bottom: 5px;" >
             </a>
-            <a href="https://www.instagram.com/dinyanyaa/" style="text-decoration: none;" target="_blank">
+            <a href="https://www.instagram.com/dinyanyaa" style="text-decoration: none;" target="_blank">
                 <img id="social" src="images/insta.png" alt="" style="width: 27px; padding-right: 10px; margin-bottom: 5px;">
             </a>
             <a href="https://twitter.com/login" style="text-decoration: none;" target="_blank">
@@ -63,33 +67,33 @@
                     <div class="page-sidebar">
                         <div class="sidebar-body">
                             <nav class="sidebar-menu" id="parts">
-                                <div class="read-more">
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="200">
                                     <a class="text" style="text-decoration: none;" href="playlists.html">Chill</a>
                                     <a class="btn btn-default btn-sm" id="read-button" href="#">read more</a>
                                 </div>
                                 <div id="info-playlist">
-                                    <p id="text-ktl">Special playlist. You can listen when you want to take a break from everything.</p>
+                                    <p id="text-ktl">Chill-out (shortened as chill; also typeset as chillout or chill out) is a loosely defined form of popular music characterized by slow tempos and relaxed moods.</p>
                                 </div>
-                                <div class="read-more">
-                                    <a class="text" style="text-decoration: none;" href="rap.html">rap</a>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="400">
+                                    <a class="text" style="text-decoration: none;" href="rap.html">RAP</a>
                                     <a class="btn btn-default btn-sm" id="top-button" href="#">read more</a>
                                 </div>
                                 <div id="info-playlist">
-                                    <p id="text-top">This playlist is the best in my opinion, as it contains a selection of my best songs of all time.</p>
+                                    <p id="text-top">Rap music is a genre of popular music developed in the United States by inner-city African Americans and Latino Americans in the Bronx borough of New York City in the 1970s. </p>
                                 </div>
-                                <div class="read-more">
-                                    <a class="text" id="topcharts" style="text-decoration: none;" href="pop.html">pop</a>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="600">
+                                    <a class="text"id="topcharts" style="text-decoration: none;" href="pop.html">pop</a>
                                     <a class="btn btn-default btn-sm" id="code-button" href="#">read more</a>
                                 </div>
                                 <div id="info-playlist">
-                                    <p id="text-code">A playlist that helps you focus when you are coding. <br><b>P.S</b> this collection was used to create this cool website ;)</p>
+                                    <p id="text-code">Pop is a genre of popular music that originated in its modern form during the mid-1950s in the United States and the United Kingdom.</p>
                                 </div>
-                                <div class="read-more">
-                                    <a class="text" style="text-decoration: none;" href="joy.html">Joy</a>
+                                <div class="read-more" data-aos="zoom-out" data-aos-delay="800">
+                                    <a class="text" style="text-decoration: none;" href="joy.html">joy</a>
                                     <a class="btn btn-default btn-sm" id="young-button" href="#">read more</a>
                                 </div>
                                 <div id="info-playlist">
-                                    <p id="text-young">A selection of young and talented Kazakh performers.<b>#dalaaltyny</b></p>
+                                    <p id="text-young">Joy music is a concept that encompasses various musical genres, intended mainly for entertainment purposes, often serving as a background for various activities, characterized by simple content and easily accessible to perception </p>
                                 </div>
                             </nav>
                         </div>
@@ -101,7 +105,7 @@
                         <div class="content-body">
                             <div class="music-items row">
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="0">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/5fcd6a3fa11375296cb3ed04f44c109c.1000x1000x1.jpg" alt="">
                                         </div>
@@ -119,7 +123,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="1">
                                         <div class="album-cover">
                                             <img src="https://lastfm.freetls.fastly.net/i/u/770x0/5603662d432bd3f160230039c6cee27e.jpg" alt="">
                                         </div>
@@ -137,7 +141,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item" data-aos="zoom-out" data-aos-delay="200"id="2">
                                         <div class="album-cover">
                                             <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Never_Be_Like_You_%28featuring_Kai%29_%28Official_Single_Cover%29_by_Flume.png" alt="">
                                         </div>
@@ -155,7 +159,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="3">
                                         <div class="album-cover">
                                             <img src="https://i.kfs.io/album/global/55161732,0v1/fit/500x500.jpg" alt="">
                                         </div>
@@ -173,7 +177,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="4">
                                         <div class="album-cover">
                                             <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/0e/f0/af/0ef0af71-9169-895b-406d-22460d302612/source/450x450bb.jpg" alt="">
                                         </div>
@@ -191,7 +195,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="5">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/5fcd6a3fa11375296cb3ed04f44c109c.1000x1000x1.jpg" alt="">
                                         </div>
@@ -209,7 +213,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="6">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/2a4c4b48762d3237f65df17e3ab35a89.1000x1000x1.png" alt="">
                                         </div>
@@ -227,7 +231,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="7">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/807d1745190072b79f85fcdbe0a51d34.1000x1000x1.jpg" alt="">
                                         </div>
@@ -245,7 +249,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="8">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/4eb268023fb6e778df8e17cbb980987e.762x762x1.jpg" alt="">
                                         </div>
@@ -263,7 +267,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="9">
                                         <div class="album-cover">
                                             <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Internet_Money_-_Lemonade.png" alt="">
                                         </div>
@@ -281,7 +285,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="10">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/47f17937b3ddb16840889d597bddfe3f.1000x1000x1.jpg" alt="">
                                         </div>
@@ -299,7 +303,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="11">
                                         <div class="album-cover">
                                             <img src="https://images.genius.com/97de504e88ae412160bc49de186189ee.1000x1000x1.jpg" alt="">
                                         </div>
@@ -317,7 +321,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="12">
                                         <div class="album-cover">
                                             <img src="https://images-na.ssl-images-amazon.com/images/I/71KuLDCUy1L._AC_UL600_SR600,600_.jpg" alt="">
                                         </div>
@@ -335,7 +339,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="13">
                                         <div class="album-cover">
                                             <img src="https://img.discogs.com/xyEydvzxwdrQzo6QO_zfIoOchuE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-13897064-1563562684-4407.jpeg.jpg" alt="">
                                         </div>
@@ -353,7 +357,7 @@
                                 </div>
 
                                 <div class="col-md-4 col-6">
-                                    <div class="album-item">
+                                    <div class="album-item"id="14">
                                         <div class="album-cover">
                                             <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Salem_Ilese_-_Mad_at_Disney.jpeg" alt="">
                                         </div>
@@ -379,6 +383,8 @@
         </div>
     </div>
 
+    <!--aos JS link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="pop.js"></script>
 
